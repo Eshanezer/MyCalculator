@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dark_themr_background"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<RelativeLayout
+			android:id="@+id/relative_history"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+		<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+		</ScrollView>
+	</RelativeLayout>
+
+	<RelativeLayout
+			android:id="@+id/realtive_current_calculation"
+			android:layout_width="match_parent"
+			android:layout_below="@+id/relative_history"
+			android:layout_height="wrap_content">
+
+	</RelativeLayout>
+
+	<RelativeLayout
+			android:id="@+id/realtive_total"
+			android:layout_width="match_parent"
+			android:layout_below="@+id/realtive_current_calculation"
+			android:layout_height="100dp">
+
+	</RelativeLayout>
+
+	<RelativeLayout
+			android:id="@+id/realtive_keypad"
+			android:layout_width="match_parent"
+			android:layout_below="@+id/realtive_total"
+			android:layout_height="fill_parent">
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:weightSum="4">
+
+			<Button
+					android:layout_width="wrap_content"
+					android:background="@drawable/btn_symble"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:gravity="center"
+					android:text="C"
+					android:textSize="42sp"
+					android:textColor="@android:color/white"
+					android:layout_height="90dp"/>
+
+			<Button
+					android:layout_width="wrap_content"
+					android:background="@drawable/btn_symble"
+					android:layout_marginLeft="5dp"
+					android:text="+/-"
+					android:textSize="42sp"
+					android:textColor="@android:color/white"
+					android:layout_marginRight="5dp"
+					android:layout_height="90dp"/>
+
+			<Button
+					android:layout_width="wrap_content"
+					android:background="@drawable/btn_symble"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:text="%"
+					android:textSize="42sp"
+					android:textColor="@android:color/white"
+					android:layout_height="90dp"/>
+
+			<Button
+					android:layout_width="wrap_content"
+					android:background="@drawable/btn_symble"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:text="/"
+					android:textSize="42sp"
+					android:textColor="@android:color/white"
+					android:layout_height="90dp"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+</RelativeLayout>
